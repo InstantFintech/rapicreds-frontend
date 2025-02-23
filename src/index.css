@@ -1,0 +1,234 @@
+.shadow_card {
+    display: block;
+    unicode-bidi: isolate;
+    max-width: 767.98px;
+
+    padding: 20px 0;
+
+    background: #fff;
+    border-radius: 24px;
+    right: 0;
+    top: 80px;
+    width: 504px;
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .8);
+    min-height: 500px;
+    box-sizing: border-box;
+}
+
+.loan_amount_container {
+    display: flex;
+    margin-left: 10px;
+    gap: 290px;
+}
+
+.loan_min_amount {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+}
+
+.loan_max_amount {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+}
+
+/*Info Container*/
+.loan-information-container {
+    background: #fff;
+    right: 0;
+    width: 465px;
+    box-shadow: 0 0 5px rgb(8, 15, 19);
+    height: 110px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+/*Months*/
+.loan-information-month-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.loan-information-months-amount {
+    color: #2864eb; /* Borde del círculo */
+    font-weight: bold;
+    letter-spacing: .005em;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.loan-information-months-text {
+    letter-spacing: .005em;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+/*Payment*/
+.loan-information-payment-container {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+}
+
+.loan-information-payment-amount {
+    font-weight: bold;
+    letter-spacing: .005em;
+    font-size: 32px;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+}
+
+.loan-information-payment-text {
+    letter-spacing: .005em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 42px;
+    font-family: "Rubik", sans-serif;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+.loan_months_container {
+    display: flex;
+    margin-left: 10px;
+    gap: 290px;
+}
+
+.loan_min_months {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline;
+    white-space: nowrap
+}
+
+.loan_max_months {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    display: inline;
+    white-space: nowrap
+}
+
+.loan_current_amount {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: .005em;
+    line-height: 42px;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: block;
+    margin-block-start: 0.23em;
+    unicode-bidi: isolate;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+}
+
+.input_container {
+    width: 300px;
+    padding: 10px;
+}
+
+/*Chrome*/
+.range {
+    -webkit-appearance: none; /* Quitar apariencia predeterminada en navegadores webkit */
+    width: 470px; /* Ancho del control */
+    height: 10px; /* Alto de la barra */
+    background: linear-gradient(to right, #3498db 0%, #ddd 0%);
+    border-radius: 5px; /* Bordes redondeados de la barra */
+    outline: none; /* Quitar el contorno */
+    transition: background 0.3s; /* Transición suave para el fondo */
+}
+
+.range::-webkit-slider-runnable-track {
+    width: 100%; /* Asegurar que el track ocupe todo el ancho */
+    height: 8px; /* Alto del track */
+    background: transparent; /* El track ya está controlado por el background del input */
+    border-radius: 5px; /* Bordes redondeados del track */
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Eliminar la apariencia por defecto */
+    appearance: none; /* Para otros navegadores */
+    width: 32px; /* Tamaño del círculo */
+    height: 32px; /* Tamaño del círculo */
+    background: #ffffff; /* Color del círculo */
+    border-radius: 50%; /* Hacer el círculo redondo */
+    border: 3px solid #2864eb; /* Borde del círculo */
+    margin-top: -10px; /* Ajustar el círculo para que quede encima de la barra */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el círculo */
+}
+
+.range::-moz-range-track {
+    width: 100%; /* Asegurar que el track ocupe todo el ancho */
+    height: 8px; /* Alto del track */
+    background: #7aff00; /* Color de la barra */
+    border-radius: 5px; /* Bordes redondeados del track */
+}
+
+.range::-moz-range-thumb {
+    width: 20px; /* Tamaño del círculo */
+    height: 20px; /* Tamaño del círculo */
+    background: #ffa900; /* Color del círculo */
+    border-radius: 50%; /* Hacer el círculo redondo */
+    border: 2px solid #ffdd00; /* Borde del círculo */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el círculo */
+}
+
+.loan_calculator_title {
+    font-size: 20px;
+    letter-spacing: .005em;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 8px;
+    box-sizing: border-box;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+.button-continue-loan {
+    border-radius: 100px;
+    font-size: 18px;
+    height: 56px;
+    margin: 20px 0 0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    background: #2864eb;
+    border: 1px solid #2864eb;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    line-height: 16px;
+    padding: 0 20px;
+    width: 483px;
+    margin-left: 10px;
+}
