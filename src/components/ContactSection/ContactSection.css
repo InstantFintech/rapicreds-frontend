@@ -1,0 +1,74 @@
+.contact-section-container {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.contact-section-items {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contact-section-image {
+    width: 690px;
+    height: 450px;
+    background-image: url('../../assets/725_generated.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-section-main-title {
+    font-size: 44px;
+    font-weight: 500;
+    margin: 35px 0 20px;
+    text-align: center;
+    letter-spacing: .005em;
+    line-height: 1.1;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+}
+
+.contact-section-sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    color: #454f96;
+    font-family: "Rubik", sans-serif;
+}
+
+.contact-section-blue-header-button-container {
+    justify-content: center;
+    align-content: center;
+    height: 56px;
+    display: flex;
+
+}
+
+.contact-section-blue-header-button {
+    justify-content: center;
+    align-content: center;
+
+    margin-top: -15px;
+    align-items: center;
+    display: flex;
+    width: 300px;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    border: 1px solid #2864eb;
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 18px;
+    line-height: 24px;
+    height: 56px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    background-color: #2864eb;
+}

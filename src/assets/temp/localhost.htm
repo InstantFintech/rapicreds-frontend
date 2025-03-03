@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./localhost_files/client"></script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./localhost_files/css2" rel="stylesheet">
+
+  <style type="text/css" data-vite-dev-id="F:/rapicreds/rapicreds-frontend/src/index.css">
+
+
+.digital-loan {
+    margin-top: 30px;
+    font-family: "Rubik", sans-serif;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 430px;
+    letter-spacing: .005em;
+}
+
+
+.get-digital-loan {
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-size: 28px;
+    max-width: 38%;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+
+
+body {
+    margin: 0;
+}
+
+</style><style type="text/css" data-vite-dev-id="F:/rapicreds/rapicreds-frontend/src/components/App/App.css">#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/** MAIN PAGE**/
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url('/src/assets/main-background.jpg');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.main-text-container {
+  margin-top: 30px;
+  align-content: center;
+  align-items: center;
+  justify-content: center
+}
+
+.loan-requisites-container {
+  margin-top: 180px;
+}
+
+.loan-requisites-images-container {
+  justify-content: center;
+  display: flex;
+  gap: 190px;
+}
+
+.loan-requisites-title {
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  display: flex;
+  color: #0c1e43;
+  font-size: 44px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  letter-spacing: .005em;
+  margin-bottom: 70px;
+}
+
+.instant-acreditation {
+  width: 171px;
+
+  height: 150px;
+  background-image: url('/src/assets/acreditacion.png');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.loan-time {
+  width: 171px;
+  height: 150px;
+  background-image: url('/src/assets/time.png');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.premium-support {
+  width: 171px;
+  height: 150px;
+  background-image: url('/src/assets/support.png');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.instant-acreditation-title {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #454f96;
+  margin-top: 15px;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.instant-acreditation-subtitle {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #454f96;
+  text-align: center;
+  margin-top: -20px;
+}</style><style type="text/css" data-vite-dev-id="F:/rapicreds/rapicreds-frontend/src/components/LoanCalculator/LoanCalculator.css">.shadow_card {
+    display: block;
+    unicode-bidi: isolate;
+    max-width: 767.98px;
+
+    padding: 20px 0;
+
+    background: #fff;
+    border-radius: 24px;
+    right: 0;
+    top: 80px;
+    width: 504px;
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .8);
+    min-height: 500px;
+    box-sizing: border-box;
+
+    margin-top: 40px;
+}
+
+.loan_amount_container {
+    display: flex;
+    margin-left: 10px;
+    gap: 290px;
+}
+
+.loan_min_amount {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+}
+
+.loan_max_amount {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+}
+
+/*Info Container*/
+.loan-information-container {
+    background: #fff;
+    right: 0;
+    width: 465px;
+    box-shadow: 0 0 5px rgb(8, 15, 19);
+    height: 110px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+/*Months*/
+.loan-information-month-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.loan-information-months-amount {
+    color: #2864eb; /* Borde del círculo */
+    font-weight: bold;
+    letter-spacing: .005em;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.loan-information-months-text {
+    letter-spacing: .005em;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+/*Payment*/
+.loan-information-payment-container {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+}
+
+.loan-information-payment-amount {
+    font-weight: bold;
+    letter-spacing: .005em;
+    font-size: 32px;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+}
+
+.loan-information-payment-text {
+    letter-spacing: .005em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 42px;
+    font-family: "Rubik", sans-serif;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+.loan_months_container {
+    display: flex;
+    margin-left: 10px;
+    gap: 290px;
+}
+
+.loan_min_months {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline;
+    white-space: nowrap
+}
+
+.loan_max_months {
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    display: inline;
+    white-space: nowrap
+}
+
+.loan_current_amount {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: .005em;
+    line-height: 42px;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: block;
+    margin-block-start: 0.23em;
+    unicode-bidi: isolate;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+
+    text-align: center;
+}
+
+.input_container {
+    width: 300px;
+    padding: 10px;
+}
+
+/*Chrome*/
+.range {
+    -webkit-appearance: none; /* Quitar apariencia predeterminada en navegadores webkit */
+    width: 470px; /* Ancho del control */
+    height: 10px; /* Alto de la barra */
+    background: linear-gradient(to right, #2864eb 0%, #2864eb 100%, #e8e3e3 50%, #e8e3e3 100%);
+    border-radius: 5px; /* Bordes redondeados de la barra */
+    outline: none; /* Quitar el contorno */
+    transition: background 0.3s; /* Transición suave para el fondo */
+}
+
+.range::-webkit-slider-runnable-track {
+    width: 100%; /* Asegurar que el track ocupe todo el ancho */
+    height: 8px; /* Alto del track */
+    background: transparent; /* El track ya está controlado por el background del input */
+    border-radius: 5px; /* Bordes redondeados del track */
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Eliminar la apariencia por defecto */
+    appearance: none; /* Para otros navegadores */
+    width: 32px; /* Tamaño del círculo */
+    height: 32px; /* Tamaño del círculo */
+    background: #ffffff; /* Color del círculo */
+    border-radius: 50%; /* Hacer el círculo redondo */
+    border: 3px solid #2864eb; /* Borde del círculo */
+    margin-top: -10px; /* Ajustar el círculo para que quede encima de la barra */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el círculo */
+}
+
+.range::-moz-range-track {
+    width: 100%; /* Asegurar que el track ocupe todo el ancho */
+    height: 8px; /* Alto del track */
+    background: #7aff00; /* Color de la barra */
+    border-radius: 5px; /* Bordes redondeados del track */
+}
+
+.range::-moz-range-thumb {
+    width: 20px; /* Tamaño del círculo */
+    height: 20px; /* Tamaño del círculo */
+    background: #ffa900; /* Color del círculo */
+    border-radius: 50%; /* Hacer el círculo redondo */
+    border: 2px solid #ffdd00; /* Borde del círculo */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el círculo */
+}
+
+.loan_calculator_title {
+    font-size: 20px;
+    letter-spacing: .005em;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 8px;
+    box-sizing: border-box;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+.button-continue-loan {
+    border-radius: 100px;
+    font-size: 18px;
+    height: 56px;
+    margin: 20px 0 0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    background: #2864eb;
+    border: 1px solid #2864eb;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    line-height: 16px;
+    padding: 0 20px;
+    width: 483px;
+    margin-left: 10px;
+}</style><style type="text/css" data-vite-dev-id="F:/rapicreds/rapicreds-frontend/src/components/Reviews/Reviews.css">.carousel-container {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ff0000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateX(100%); /* Inicia fuera de pantalla */
+}
+
+.carousel.next .review {
+    opacity: 1;
+    transform: translateX(0); /* Aparece desde el lado derecho */
+}
+
+.carousel.prev .review {
+    opacity: 1;
+    transform: translateX(0); /* Aparece desde el lado izquierdo */
+}
+
+.carousel.next .review {
+    opacity: 0;
+    transform: translateX(-100%); /* La reseña anterior se mueve hacia la izquierda */
+}
+
+.carousel.prev .review {
+    opacity: 0;
+    transform: translateX(100%); /* La reseña anterior se mueve hacia la derecha */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+button.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}</style><style type="text/css" data-vite-dev-id="F:/rapicreds/rapicreds-frontend/src/components/Header/Header.css">/** HEADER **/
+
+.header-container {
+    justify-content: center;
+    box-shadow: 0 2px 2px rgba(12, 30, 67, .16);
+    margin-bottom: 2px;
+}
+
+.nav-container {
+    display: flex;
+}
+
+/** Header Logo **/
+
+.header-logo {
+    width: 250px;
+    height: 75px;
+    background-image: url('/src/assets/logo.png');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.account-container {
+    margin-left: 90px;
+}
+
+
+.header-button {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.header-button-active {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+    border-bottom: 4px solid #2864eb;
+    padding-bottom: 15px;
+}
+
+
+.blue-header-button {
+    margin-top: -15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    width: fit-content;
+    border: 1px solid #2864eb;
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 16px;
+    line-height: 16px;
+    height: 48px;
+    padding: 0 20px;
+    font-family: "Rubik", sans-serif;
+    background-color: #2864eb;
+}
+
+
+.blue-header-button-active {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 16px;
+    height: 48px;
+    padding: 0 20px
+}
+
+/* Cambiar el color cuando se pasa el mouse por encima */
+nav ul li a:hover {
+    color: #2864eb; /* El color que desees cuando el ratón pasa por encima */
+}
+
+
+
+/* Estilos para el contenedor del header */
+.header-container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Estilos para el header */
+header {
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Asegúrate de que el contenedor de la lista (ul) use flexbox */
+nav ul {
+    display: flex; /* Hace que los <li> se alineen en una fila */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para los elementos de la lista (li) */
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+.nav-container {
+    margin-left: 240px;
+}
+</style><style type="text/css" data-vite-dev-id="F:/rapicreds/rapicreds-frontend/src/components/Footer/Footer.css">
+.footer-container {
+    margin-top: 80px;
+    border-top: 1px solid #e9effb;
+    justify-content: center;
+    display: block;
+}
+
+.footer-items {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.footer-first-row {
+    margin-left: 90px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 248px;
+}
+
+
+.footer-second-row {
+    margin-left: 90px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 220px;
+}
+
+.footer-simple-text {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.footer-simple-child-text {
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-third-row {
+    margin-left: 90px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 220px;
+}
+
+
+.footer-button {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.footer-logo {
+    width: 250px;
+    height: 75px;
+    background-image: url('/src/assets/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-social-media {
+
+    display: flex;
+}
+
+.footer-facebook {
+    margin-left: 15px;
+    width: 32px;
+    height: 27px;
+    background-image: url('/src/assets/face.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-instagram {
+    width: 32px;
+    height: 32px;
+    background-image: url('/src/assets/insta.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-mail {
+    width: 32px;
+    height: 32px;
+    background-image: url('/src/assets/mail.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-whatsapp {
+    width: 32px;
+    height: 32px;
+    background-image: url('/src/assets/cel.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.footer-mail-container {
+    display: flex;
+}
+
+.footer-whatsapp-container {
+    margin-top: 15px;
+    display: flex;
+}
+
+
+.footer-description {
+    display: flex;
+
+    justify-content: center;
+    background-color: #e9effb;
+    gap: 20px;
+}
+
+.footer-description-subtext {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #0c1e43;
+}
+
+.footer-description-maintext {
+    font-family: "Rubik", sans-serif;
+    font-size: 67px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: .005em;
+    color: #0c1e43;
+    margin-top: 40px;
+}
+
+.footer-description-text-container {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.footer-description-subtext-container {
+    max-width: 1032px;
+}
+
+.footer-description-main-container {
+    max-width: 1032px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-fiscal-data-container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.footer-fiscal-data {
+    width: 94px;
+    height: 94px;
+    background-image: url('/src/assets/datafiscal.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-fiscal-user {
+    width: 194px;
+    height: 94px;
+    background-image: url('/src/assets/usuariosfinancieros.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}</style></head>
+
+  <body><header>
+    <div id="header-root"><header class="header-container"><div class="header-logo"></div><div class="nav-container"><div><nav><ul><li><a class="header-button-active" href="http://localhost:5173/" data-discover="true" aria-current="page">Inicio</a></li><li><a class="header-button" href="http://localhost:5173/contact" data-discover="true">Contacto</a></li><li><a class="header-button" href="http://localhost:5173/about" data-discover="true">Acerca de Nosotros</a></li></ul></nav></div><div class="account-container"><nav><ul><li><a class="header-button" href="http://localhost:5173/account" data-discover="true">Mi Cuenta</a></li><li><a class="blue-header-button" href="http://localhost:5173/account" data-discover="true">Solicitar Prestamo</a></li></ul></nav></div></div></header><main><div class="card"><div class="main-background"><div class="main-text-container"><p class="digital-loan">Préstamos Digitales</p><p class="get-digital-loan">¡Obtene efectivo en el acto y solo con tu DNI!</p></div><div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 p-6"><div class="shadow_card"><div><h2 class="loan_calculator_title">Importe a solicitar</h2><div class="mb-6"><p class="loan_current_amount">$ 1.800.000</p><div class="input_container"><input type="range" min="10000" max="1800000" step="10000" class="range" value="1800000" style="background: linear-gradient(to right, rgb(40, 100, 235) 100%, rgb(232, 227, 227) 100%);"></div><div class="loan_amount_container"><p class="loan_min_amount">$10.000</p><p class="loan_max_amount">$1.800.000</p></div></div><div class="loan-information-container"><div class="loan-information-month-container"><p class="loan-information-months-amount">18 cuotas</p><p class="loan-information-months-text">de</p></div><div class="loan-information-payment-container"><p class="loan-information-payment-amount">$ 309.392,73</p><p class="loan-information-payment-text">por mes</p></div></div><div class="input_container"><input type="range" min="3" max="18" step="1" class="range" value="18" style="background: linear-gradient(to right, rgb(40, 100, 235) 100%, rgb(232, 227, 227) 100%);"><div class="loan_months_container"><p class="loan_min_months">3 cuotas</p><p class="loan_max_months">18 cuotas</p></div></div><button class="button-continue-loan">Continuar</button></div></div></div></div><div class="loan-requisites-container"><div class="loan-requisites-title">¿Por qué elegir RapiCreds?</div><div class="loan-requisites-images-container"><div class="instant-acreditation-container"><div class="loan-time"></div><p class="instant-acreditation-title">Solicitud online</p><p class="instant-acreditation-subtitle">y simple</p></div><div class="instant-acreditation-container"><div class="instant-acreditation"></div><p class="instant-acreditation-title">Acreditación</p><p class="instant-acreditation-subtitle">instantanea</p></div><div class="instant-acreditation-container"><div class="premium-support"></div><p class="instant-acreditation-title">Soporte</p><p class="instant-acreditation-subtitle">1 a 1</p></div></div></div><div class="carousel-container"><div class="carousel next"><div class="review"><p style="
+    margin-left: 100px;
+">"Un producto de calidad, superó mis expectativas."</p><p>- Laura Gómez</p></div></div><button class="prev">❮</button><button class="next">❯</button></div></div></main></div>
+    <script type="module" src="./localhost_files/header.tsx"></script>
+  </header>
+
+  <footer>
+    <div id="footer-root"><div class="footer-container"><div class="footer-items"><div class="footer-logo"></div><div class="footer-first-row"><a><a class="footer-button" href="http://localhost:5173/" data-discover="true">Inicio</a></a><a><a aria-current="page" class="footer-button active" href="http://localhost:5173/contact" data-discover="true">Contacto</a></a><a><a class="footer-button" href="http://localhost:5173/about" data-discover="true">Acerca de Nosotros</a></a><a><a class="footer-button" href="http://localhost:5173/loan" data-discover="true">Solicita tu prestamo</a></a></div><div class="footer-second-row"><a><a class="footer-button" href="http://localhost:5173/cancel-loan" data-discover="true">Boton de arrepentimiento</a></a><a><a class="footer-button" href="http://localhost:5173/terms-and-conditions" data-discover="true">Terminos y condiciones</a></a><a><a class="footer-button" href="http://localhost:5173/contract-model" data-discover="true">Modelo de contrato Ley 24.240</a></a><a><a class="footer-button" href="http://localhost:5173/loan" data-discover="true">Informacion al usuario de servicios financieros</a></a><a><a class="footer-button" href="http://localhost:5173/loan" data-discover="true">Defensa al consumidor</a></a></div><div class="footer-third-row"><a class="footer-simple-text">Seguinos en</a><div class="footer-social-media"><div class="footer-instagram"></div><div class="footer-facebook"></div></div><a class="footer-simple-text">Contactanos</a><div class="footer-contact"><div class="footer-mail-container"><div class="footer-mail"></div><a class="footer-simple-child-text">contacto@rapicreds.com</a></div><div class="footer-whatsapp-container"><div class="footer-whatsapp"></div><a class="footer-simple-child-text">+54 9 1126706753</a></div></div></div></div><div class="footer-description"><div class="footer-description-text-container"><div class="footer-description-subtext-container"><a class="footer-description-subtext">El período mínimo para la devolución de un préstamo es de 3 meses, siendo el máximo 18 meses. La TNA de un préstamo varía dependiendo del perfil crediticio del solicitante, siendo la mínima 169,0% y la máxima 279,0%. A su vez, la TEA mínima es de 386,03% siendo la máxima 1128,69%</a></div><div class="footer-description-main-container"><a class="footer-description-maintext">(CFT) con IVA: Mínimo: 560,77% - Máximo: 1858,45%</a></div><div class="footer-description-subtext-container"><a class="footer-description-subtext">A modo de ejemplo Monto solicitado de $50.000 a 12 meses TNA (sin IVA): 169,0% - TEA (sin IVA): 386,03% - CFTEA (con IVA): 560,77% Cuota: $10.039,84 Total a pagar: $120.478,04</a></div><div class="footer-description-subtext-container"><a class="footer-description-subtext">Lavalle 815, Quilmes Centro, Buenos Aires, Argentina</a></div><div class="footer-fiscal-data-container"><div class="footer-fiscal-data"></div><div class="footer-fiscal-user"></div></div></div></div></div></div>
+    <script type="module" src="./localhost_files/footer.tsx"></script>
+  </footer>
+
+</body></html>

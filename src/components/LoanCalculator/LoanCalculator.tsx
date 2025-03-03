@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './LoanCalculator.css';
 
 function ShadowCard({children}: { children: React.ReactNode }) {
   return (
@@ -9,7 +10,7 @@ function ShadowCard({children}: { children: React.ReactNode }) {
 }
 
 function Card({children}: { children: React.ReactNode }) {
-  return <div className="p-8 bg-white shadow-2xl rounded-2xl w-full max-w-lg border border-gray-200">{children}</div>;
+  return <div>{children}</div>;
 }
 
 function Button({ children, onClick, className }: { children: React.ReactNode; onClick?: () => void, className: string }) {
@@ -26,7 +27,7 @@ function Button({ children, onClick, className }: { children: React.ReactNode; o
 export default function LoanCalculator() {
   const [amount, setAmount] = useState(1800000);
   const [installments, setInstallments] = useState(18);
-  const interestRate = 0.05; // Tasa de interés ficticia
+  const interestRate = 0.16;
 
   const monthlyPayment = (
     (amount * interestRate) / (1 - Math.pow(1 + interestRate, -installments))
@@ -34,11 +35,17 @@ export default function LoanCalculator() {
 
   let [entero, decimal] = monthlyPayment.split('.');  // Aseguramos que haya 2 decimales
 
-  // Formateamos la parte entera con separadores de miles
   entero = entero.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
-  // Unimos la parte entera y decimal con coma
   const fixedMonthlyPayment = `${entero},${decimal}`;
+
+  const amountBackgroundStyle = {
+    background: `linear-gradient(to right, #2864eb ${((amount - 10000) / (1800000 - 10000)) * 100}%, #e8e3e3 ${((amount - 10000) / (1800000 - 10000)) * 100}%)`,
+  };
+
+  const installmentsBackgroundStyle = {
+    background: `linear-gradient(to right, #2864eb ${((installments - 3) / (18 - 3)) * 100}%, #e8e3e3 ${((installments - 3) / (18 - 3)) * 100}%)`,
+  };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 p-6">
@@ -52,13 +59,14 @@ export default function LoanCalculator() {
 
             <div className="input_container">
               <input
-                type="range"
-                min="10000"
-                max="1800000"
-                step="10000"
-                value={amount}
-                onChange={(e) => setAmount(Number(e.target.value))}
-                className="range"
+                  type="range"
+                  min="10000"
+                  max="1800000"
+                  step="10000"
+                  value={amount}
+                  onChange={(e) => setAmount(Number(e.target.value))}
+                  className="range"
+                  style={amountBackgroundStyle}
               />
             </div>
 
@@ -86,13 +94,14 @@ export default function LoanCalculator() {
 
           <div className="input_container">
             <input
-              type="range"
-              min="3"
-              max="18"
-              step="1"
-              value={installments}
-              onChange={(e) => setInstallments(Number(e.target.value))}
-              className="range"
+                type="range"
+                min="3"
+                max="18"
+                step="1"
+                value={installments}
+                onChange={(e) => setInstallments(Number(e.target.value))}
+                className="range"
+                style={installmentsBackgroundStyle}
             />
 
             <div className="loan_months_container">
@@ -102,8 +111,19 @@ export default function LoanCalculator() {
 
           </div>
 
+          <div>
+
+
+          </div>
 
           <Button className="button-continue-loan" onClick={() => alert("Préstamo solicitado")}>Continuar</Button>
+
+          <div className="loan-calculator-conditions-container">
+            <p className="loan-calculator-conditions">
+              Sujeto a aprobación crediticia. Las condiciones pueden variar de acuerdo al perfil de riesgo del cliente.
+            </p>
+
+          </div>
         </Card>
       </ShadowCard>
 

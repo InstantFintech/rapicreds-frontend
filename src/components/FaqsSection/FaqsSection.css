@@ -1,0 +1,121 @@
+.faqs-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;     /* Centra el contenido horizontalmente */
+    text-align: center;      /* Asegura que los textos estén centrados */
+    padding: 20px;           /* Espaciado interno */
+    margin-top: 80px;
+}
+
+.faq-header-container {
+    justify-content: center;
+    align-items: center;
+}
+
+summary {
+    max-width: 700px;
+}
+
+details {
+    max-width: 700px;
+}
+
+.faq-header-title {
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .005em;
+    line-height: 1.1;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+}
+
+.faq-header-subtitle {
+    margin-top: -35px;
+    font-size: 20px;
+    text-align: center;
+    color: #454f96;
+    font-family: "Rubik", sans-serif;
+}
+
+.faq-items {
+    display: flex;
+    flex-direction: column;  /* Apilar los ítems de FAQ uno debajo del otro */
+    gap: 15px;               /* Espacio entre cada ítem */
+    width: 100%;             /* Asegura que ocupe todo el ancho disponible */
+    max-width: 700px;        /* Máximo ancho para los ítems de FAQ */
+    margin-top: 20px;        /* Espacio superior */
+}
+
+.faq-item {
+    max-width: 700px;
+}
+
+.faq-item summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.faq-item summary::before {
+    margin-right: 10px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.faq-arrow {
+    margin-top: 25px;
+    color: #2864eb;
+}
+
+
+.faq-text-container {
+    justify-content: space-between;
+    border-bottom: 1px solid #c6d6f7;
+    width: 700px;
+    display: flex;
+}
+
+.faq-text {
+    align-items: center;
+    color: #0c1e43;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+    letter-spacing: .005em;
+    line-height: 28px;
+    font-family: "Rubik", sans-serif;
+}
+
+.faq-content {
+    font-family: "Rubik", sans-serif;
+
+    color: #454f96;
+    font-size: 18px;
+    letter-spacing: .005em;
+    line-height: 24px;
+    text-align: left;
+}
+
+.faq-item[open] summary::before {
+    transform: rotate(90deg); /* Flecha rotada cuando el item está abierto */
+}
+
+.faq-more-faqs-text {
+    font-family: "Rubik", sans-serif;
+    color: #2864eb;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    letter-spacing: .005em;
+    line-height: 28px;
+    margin: 30px;
+    text-align: center;
+}
+
+/* Estilo de la respuesta */

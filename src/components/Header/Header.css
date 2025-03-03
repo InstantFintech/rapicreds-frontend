@@ -1,0 +1,136 @@
+/** HEADER **/
+
+.header-container {
+    justify-content: center;
+    box-shadow: 0 2px 2px rgba(12, 30, 67, .16);
+    margin-bottom: 2px;
+}
+
+.nav-container {
+    display: flex;
+}
+
+/** Header Logo **/
+
+.header-logo {
+    width: 250px;
+    height: 75px;
+    background-image: url('../../assets/logo.png');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.account-container {
+    margin-left: 90px;
+}
+
+
+.header-button {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.header-button-active {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+    border-bottom: 4px solid #2864eb;
+    padding-bottom: 15px;
+}
+
+
+.blue-header-button {
+    margin-top: -15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    width: fit-content;
+    border: 1px solid #2864eb;
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 16px;
+    line-height: 16px;
+    height: 48px;
+    padding: 0 20px;
+    font-family: "Rubik", sans-serif;
+    background-color: #2864eb;
+}
+
+
+.blue-header-button-active {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 16px;
+    height: 48px;
+    padding: 0 20px
+}
+
+/* Cambiar el color cuando se pasa el mouse por encima */
+nav ul li a:hover {
+    color: #2864eb; /* El color que desees cuando el ratón pasa por encima */
+}
+
+
+
+/* Estilos para el contenedor del header */
+.header-container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Estilos para el header */
+header {
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Asegúrate de que el contenedor de la lista (ul) use flexbox */
+nav ul {
+    display: flex; /* Hace que los <li> se alineen en una fila */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para los elementos de la lista (li) */
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+.nav-container {
+    margin-left: 240px;
+}

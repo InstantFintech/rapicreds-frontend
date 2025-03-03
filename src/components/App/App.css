@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/** MAIN PAGE**/
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url('../../assets/main-background.jpg');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.main-text-container {
+  margin-top: 30px;
+  align-content: center;
+  align-items: center;
+  justify-content: center
+}
+
+.loan-requisites-container {
+  margin-top: 230px;
+
+}
+
+.loan-requisites-images-container {
+  justify-content: center;
+  display: flex;
+  gap: 190px;
+}
+
+.loan-requisites-title {
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  display: flex;
+  color: #0c1e43;
+  font-size: 44px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  letter-spacing: .005em;
+  margin-bottom: 70px;
+}
+
+.instant-acreditation {
+  width: 171px;
+
+  height: 150px;
+  background-image: url('../../assets/acreditacion.png');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.loan-time {
+  width: 171px;
+  height: 150px;
+  background-image: url('../../assets/time2.png');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.premium-support {
+  width: 171px;
+  height: 150px;
+  background-image: url('../../assets/support.png');
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.instant-acreditation-title {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #454f96;
+  margin-top: 15px;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.instant-acreditation-subtitle {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #454f96;
+  text-align: center;
+  margin-top: -20px;
+}

@@ -1,0 +1,224 @@
+
+.footer-container {
+    margin-top: 80px;
+    border-top: 1px solid #e9effb;
+    justify-content: center;
+    display: block;
+}
+
+.footer-items {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.footer-first-row {
+    margin-left: 90px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 248px;
+}
+
+
+.footer-second-row {
+    margin-left: 90px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 220px;
+}
+
+.footer-simple-text {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.footer-simple-child-text {
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-third-row {
+    margin-left: 90px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 220px;
+}
+
+
+.footer-button {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #0c1e43;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.footer-logo {
+    width: 250px;
+    height: 75px;
+    background-image: url('../../assets/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-social-media {
+
+    display: flex;
+}
+
+.footer-facebook {
+    margin-left: 15px;
+    width: 32px;
+    height: 27px;
+    background-image: url('../../assets/face.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-instagram {
+    width: 32px;
+    height: 32px;
+    background-image: url('../../assets/insta.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-mail {
+    width: 32px;
+    height: 32px;
+    background-image: url('../../assets/mail.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-whatsapp {
+    width: 32px;
+    height: 32px;
+    background-image: url('../../assets/cel.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.footer-mail-container {
+    display: flex;
+}
+
+.footer-whatsapp-container {
+    margin-top: 15px;
+    display: flex;
+}
+
+
+.footer-description {
+    display: flex;
+
+    justify-content: center;
+    background-color: #e9effb;
+    gap: 20px;
+}
+
+.footer-description-subtext {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #0c1e43;
+}
+
+.footer-description-maintext {
+    font-family: "Rubik", sans-serif;
+    font-size: 67px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: .005em;
+    color: #0c1e43;
+    margin-top: 40px;
+}
+
+.footer-description-text-container {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.footer-description-subtext-container {
+    max-width: 1032px;
+}
+
+.footer-description-main-container {
+    max-width: 1032px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-fiscal-data-container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.footer-fiscal-data {
+    width: 94px;
+    height: 94px;
+    background-image: url('../../assets/datafiscal.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-fiscal-user {
+    width: 194px;
+    height: 94px;
+    background-image: url('../../assets/usuariosfinancieros.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
