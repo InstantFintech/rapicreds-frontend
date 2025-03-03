@@ -97,12 +97,12 @@ export default function LoanForm() {
               placeholder=" "
               value={formData.DNI}
               onChange={(e) => {
-                let rawValue = e.target.value.replace(/\D/g, "").slice(0, 8); 
+                const rawValue = e.target.value.replace(/\D/g, "").slice(0, 8); 
 
-                let formattedDNI = rawValue.replace(
+                const formattedDNI = rawValue.replace(
                   /^(\d{2})(\d{3})?(\d{3})?$/,
                   ( _,p1, p2, p3) => {
-                    let parts = [p1, p2, p3].filter(Boolean); 
+                    const parts = [p1, p2, p3].filter(Boolean); 
                     return parts.join(".");
                   }
                 );
