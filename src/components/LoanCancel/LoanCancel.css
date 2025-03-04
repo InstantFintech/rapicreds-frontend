@@ -1,0 +1,156 @@
+/*LoanForm*/
+.loan_cancel_title_1 {
+  margin-left: 100px;
+  color: #0c1e43;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  letter-spacing: 0.005em;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 500;
+  display: inline;
+  white-space: nowrap;
+}
+.loan_cancel_tittle_2 {
+  margin-bottom: 85px;
+  margin-left: 2px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #454f96;
+  max-width: 680px;
+
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+form .user-email,
+form .user-dni-cancel {
+  position: relative;
+  margin: 10px 0;
+  display: flex;
+}
+.user-dni-cancel-container {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.user-email input {
+  border: none;
+  width: 85%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #666;
+}
+.user-email label {
+  line-height: 16px;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #858cc2;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -30px;
+}
+.user-email-container {
+  margin-left: 50px;
+}
+
+.user-dni-cancel input {
+  width: 85%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #666;
+}
+
+.user-dni-cancel label {
+  line-height: 16px;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #858cc2;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -30px;
+}
+.user-email label {
+  display: flex;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: #858cc2;
+
+  cursor: pointer;
+
+  position: absolute;
+}
+
+.user-email input:focus,
+.user-dni-cancel input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+.user-email input:focus + label,
+.user-dni-cancel input:focus + label,
+.user-email input:not(:placeholder-shown) + label,
+.user-dni-cancel input:not(:placeholder-shown) + label {
+  transform: translateY(-100%);
+  font-size: 0.75rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.button-cancel-loan {
+  margin-top: 50px !important;
+  border-radius: 100px;
+  font-size: 18px;
+  height: 56px;
+  margin: 20px 0 0;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  min-width: 70px;
+  outline: none;
+  position: relative;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  line-height: 16px;
+  padding: 0 20px;
+  width: 483px;
+  margin-left: 10px;
+  background-color: gray;
+  color: white;
+}
+
+.button-cancel-loan.enabled {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.button-cancel-loan.enabled:hover {
+  background-color: #0056b3;
+}
+
+.recaptcha-container {
+  display: flex;
+  margin-left: -105px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
