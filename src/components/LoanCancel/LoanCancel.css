@@ -1,5 +1,6 @@
 /*LoanForm*/
 .loan_cancel_title_1 {
+  margin-left: 100px;
   color: #0c1e43;
   font-family: "Rubik", sans-serif;
   text-align: center;
@@ -12,7 +13,8 @@
 }
 .loan_cancel_tittle_2 {
   margin-bottom: 85px;
-
+  margin-left: 2px;
+  text-align: center;
   font-size: 16px;
   line-height: 24px;
   color: #454f96;
@@ -22,14 +24,18 @@
   font-weight: 400;
 }
 form .user-email,
-form .user_dni {
-  position: relative; 
+form .user-dni-cancel {
+  position: relative;
   margin: 10px 0;
   display: flex;
 }
+.user-dni-cancel-container {
+  margin-left: 50px;
+  margin-top: 50px;
+}
 .user-email input {
   border: none;
-  width: 80%;
+  width: 85%;
   font-size: 15px;
   border: none;
   outline: none;
@@ -42,28 +48,29 @@ form .user_dni {
   font-weight: 400;
   font-size: 16px;
   color: #858cc2;
-  margin-left: 50px;
   cursor: pointer;
   position: absolute;
   margin-top: -30px;
 }
-.user-dni input {
-  margin-top: 30px;
-  width: 80%;
+.user-email-container {
+  margin-left: 50px;
+}
+
+.user-dni-cancel input {
+  width: 85%;
   font-size: 15px;
   border: none;
   outline: none;
   border-bottom: 1px solid #666;
 }
 
-.user-dni label {
+.user-dni-cancel label {
   line-height: 16px;
   display: flex;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #858cc2;
-  margin-left: 50px;
   cursor: pointer;
   position: absolute;
   margin-top: -30px;
@@ -74,25 +81,23 @@ form .user_dni {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   color: #858cc2;
-  margin-left: 50px;
+
   cursor: pointer;
-  margin-top: -30px;
+
   position: absolute;
 }
 
 .user-email input:focus,
-.user-dni input:focus {
-  border-bottom: 2px solid #007bff; /* Cambia a azul cuando está en foco */
+.user-dni-cancel input:focus {
+  border-bottom: 2px solid #007bff;
 }
 
 .user-email input:focus + label,
-.user-dni input:focus + label,
+.user-dni-cancel input:focus + label,
 .user-email input:not(:placeholder-shown) + label,
-.user-dni input:not(:placeholder-shown) + label {
-  transform: translateY(
-    -100%
-  ); /* Mueve el label hacia arriba de manera proporcional */
-  font-size: 0.75rem; /* 12px en rem */
+.user-dni-cancel input:not(:placeholder-shown) + label {
+  transform: translateY(-100%);
+  font-size: 0.75rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -141,6 +146,11 @@ input[type="number"]::-webkit-outer-spin-button {
 .recaptcha-container {
   display: flex;
   margin-left: -105px;
-  justify-content: center; 
-  margin-top: 20px; 
+  justify-content: center;
+  margin-top: 20px;
+}
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
 }

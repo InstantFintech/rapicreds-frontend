@@ -12,8 +12,10 @@ export default function LoanForm() {
 
   const [isFormValid, setIsFormValid] = useState(false);
   const [captchaVerified, setCaptchaVerified] = useState(false);
+  const validateEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
-  // actualiza inputs
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
 
@@ -23,13 +25,13 @@ export default function LoanForm() {
     }));
   };
 
-  // Verifica campos llenos
   useEffect(() => {
-    const allFieldsFilled = formData.DNI.trim() !== "" && captchaVerified;
-    formData.email.trim() !== "" && captchaVerified;
+    const isDNIValid = formData.DNI.length === 10;
+    const isEmailValid = formData.email.trim() !== "";
+    const allFieldsValid = isDNIValid && isEmailValid && captchaVerified;
 
-    setIsFormValid(allFieldsFilled);
-  }, [formData]);
+    setIsFormValid(allFieldsValid);
+  }, [formData, captchaVerified]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 p-6">
@@ -55,23 +57,27 @@ export default function LoanForm() {
             />
             <label htmlFor="email">E-mail</label>
           </div>
+
+          {!validateEmail(formData.email) && formData.email.length > 0 && (
+            <p className="error-text">Ingrese un email válido </p>
+          )}
         </div>
 
-        <div className="user-dni-container">
-          <div className="user-dni">
+        <div className="user-dni-cancel-container">
+          <div className="user-dni-cancel">
             <input
-              type="text" 
-              name="user-dni"
-              id="user-dni"
+              type="text"
+              name="user-dni-cancel"
+              id="user-dni-cancel"
               placeholder=" "
               value={formData.DNI}
               onChange={(e) => {
-                let rawValue = e.target.value.replace(/\D/g, "").slice(0, 8); 
+                let rawValue = e.target.value.replace(/\D/g, "").slice(0, 8);
 
                 let formattedDNI = rawValue.replace(
                   /^(\d{2})(\d{3})?(\d{3})?$/,
-                  ( _,p1, p2, p3) => {
-                    let parts = [p1, p2, p3].filter(Boolean); 
+                  (_, p1, p2, p3) => {
+                    let parts = [p1, p2, p3].filter(Boolean);
                     return parts.join(".");
                   }
                 );
@@ -79,8 +85,13 @@ export default function LoanForm() {
                 setFormData((prev) => ({ ...prev, DNI: formattedDNI }));
               }}
             />
-            <label htmlFor="user-dni">DNI</label>
+            <label htmlFor="user-dni-cancel">DNI</label>
           </div>
+          {formData.DNI.length > 0 && formData.DNI.length < 8 && (
+            <p className="error-text">
+              El DNI debe tener exactamente 8 números
+            </p>
+          )}
         </div>
 
         <div className="recaptcha-container">

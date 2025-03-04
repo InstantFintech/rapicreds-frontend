@@ -1,8 +1,9 @@
 // @ts-expect-error TS6133 for "unused" React import (must import or else TSX/JSX eslint errors)
 import React, { } from 'react';
-import LoanForm from "../LoanForm/LoanForm.tsx";
-import LoanCancel from "../LoanCancel/LoanCancel.tsx";
 import './Account.css';
+import LoanSignUp from '../LoanSignUp/LoanSignUp';
+import LoanLogin from '../LoanLogin/LoanLogin';
+
 
 /*
  * This is an example of a React functional component making use of "hooks".
@@ -15,13 +16,11 @@ function Account() {
       <div className="card">
 
         <div className="test-container">
-          <LoanForm>
+          
+        <LoanSignUp></LoanSignUp>
+         <LoanLogin></LoanLogin>
+          
 
-          </LoanForm>
-
-          <LoanCancel>
-
-          </LoanCancel>
         </div>
 
           

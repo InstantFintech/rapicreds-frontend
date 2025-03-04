@@ -1,0 +1,274 @@
+/*LoanForm*/
+.loan_login_title_1 {
+    margin-left: 100px;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 500;
+    line-height: 26px;
+    display: block; 
+    white-space: normal; 
+    max-width: 300px; 
+    word-wrap: break-word; 
+  }
+
+  
+  form .user-email-login,
+  form .user-dni-login {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+  }
+  .user-dni-login-container {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .user-email-login-container {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .user-email-login input {
+    border: none;
+    width: 85%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e9effb;
+  }
+  .user-email-login label {
+    line-height: 16px;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #858cc2;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -30px;
+  }
+  .user-email-login-container {
+    margin-left: 50px;
+  }
+  
+  .user-dni-login input {
+    width: 85%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e9effb;
+  }
+  
+  .user-dni-login label {
+    line-height: 16px;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #858cc2;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -30px;
+  }
+  .user-email-login label {
+    display: flex;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    color: #858cc2;
+  
+    cursor: pointer;
+  
+    position: absolute;
+  }
+  
+  .user-email-login input:focus,
+  .user-dni-login input:focus {
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .user-email-login input:focus + label,
+  .user-dni-login input:focus + label,
+  .user-email-login input:not(:placeholder-shown) + label,
+  .user-dni-login input:not(:placeholder-shown) + label {
+    transform: translateY(-100%);
+    font-size: 0.75rem;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  * {
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .button-loan-login {
+    margin-top: 50px !important;
+    border-radius: 100px;
+    font-size: 18px;
+    height: 56px;
+    margin: 20px 0 0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 70px;
+    outline: none;
+    position: relative;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    line-height: 16px;
+    padding: 0 100px;
+    margin-left: 50px;
+    width: 400px;
+    background-color: gray;
+    color: white;
+  }
+  
+  .button-loan-login.enabled {
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  .button-loan-login.enabled:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+
+
+  .google-login-button {
+    width: 100%; 
+    height: 50px; 
+    background-color: #4285F4; 
+    color: white; 
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-login-button img {
+    width: 20px;
+    margin-right: 10px; 
+  }
+  .forgot-password {
+    display: flex; 
+    margin: 20px; 
+    font-size: 18px;
+    padding: 10px 15px; 
+    margin-left: 30px;
+    color: #2864eb;
+    text-decoration: none;
+  }
+  .no-password {
+    display: flex; 
+    font-size: 18px;
+    margin-top: -20px; 
+    padding: 10px 15px; 
+    margin-left: 30px;
+    color: #2864eb;
+    text-decoration: none;
+    
+  }
+   
+  .forgot-password:hover,
+  .no-password:hover {
+    text-decoration: underline;
+  }
+
+  .new-register {
+    display: flex; 
+    margin-top: -42px;
+    padding: 10px 15px; 
+    margin-left:275px;;
+    color: #2864eb;
+    font-size: 18px;
+    text-decoration: none;
+    
+  }
+  .new-register:hover {
+    text-decoration: underline;
+  }
+  .text-new-register {
+    display: flex; 
+    font-size: 18px;
+    padding: 10px 15px; 
+    margin-left: 115px;
+    color: #080808;
+    text-decoration: none;
+    
+  }
+
+  .custom-button-SingUp {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 10px 20px;
+    border: none;
+    background-color: #f9fafc; 
+    color: rgb(22, 11, 11);
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 40px;
+    width: 400px;
+  }
+  
+  .custom-button-SingUp:hover {
+    background-color: #bdd4ec; 
+  }
+  
+  .button-image {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .o{
+    display: flex; 
+    font-size: 16px; 
+    color: #858cc2;
+    padding: 10px 15px; 
+    margin-left: 115px;
+    text-decoration: none;
+    margin-left: 220px;
+    
+  }
+  .logo-google {
+    width: 40px;
+    height: 20px;
+    background-image: url('../../assets/loguito-google.png');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 70px;
+}
+
+span{
+  display: flex;
+  
+  
+  font-size: 14px;
+}

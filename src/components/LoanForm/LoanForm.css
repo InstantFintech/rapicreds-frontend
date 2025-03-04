@@ -8,6 +8,9 @@
   display: inline;
   white-space: nowrap;
 }
+.loan-form-title-container {
+  text-align: center;
+}
 
 .loan_form_tittle_2 {
   margin-bottom: 85px;
@@ -21,27 +24,29 @@
 form .user-name,
 form .user-last_name,
 form .user-dni {
-  position: relative; /* En lugar de absolute */
+  position: relative;
   margin: 10px 0;
   display: flex;
 }
 
 .user-name-container {
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .user-last-name-container {
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .user-dni-container {
-  margin-left: 50px;
+  margin-left: 80px;
+  margin-top: 0px;
 }
 
 .user_name input,
 .user_last_name input,
 .user-dni input {
-  width: 80%;
+  margin-left: -30px;
+  width: 95%;
   font-size: 15px;
   border: none;
   outline: none;
@@ -54,6 +59,7 @@ form .user-dni {
 }
 
 .user_name label {
+  margin-left: -30px;
   display: flex;
   font-weight: 400;
   font-family: "Rubik", sans-serif;
@@ -65,6 +71,7 @@ form .user-dni {
 }
 
 .user_last_name label {
+  margin-left: -30px;
   display: flex;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -76,6 +83,8 @@ form .user-dni {
 }
 
 .user-dni label {
+  margin-left: -30px;
+  line-height: 16px;
   display: flex;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -98,10 +107,8 @@ form .user-dni {
 .user_name input:not(:placeholder-shown) + label,
 .user_last_name input:not(:placeholder-shown) + label,
 .user-dni input:not(:placeholder-shown) + label {
-  transform: translateY(
-    -100%
-  ); /* Mueve el label hacia arriba de manera proporcional */
-  font-size: 0.75rem; /* 12px en rem */
+  transform: translateY(-100%);
+  font-size: 0.75rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -186,7 +193,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 95px;
   position: absolute;
   font-size: 16px;
-  margin-left: -45px;
+
   color: #858cc2;
   transition: all 0.3s ease;
   pointer-events: auto;
@@ -208,7 +215,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .cellphone-label {
   position: absolute;
-  margin-left: -370px;
+  margin-left: -305px;
   width: 250px;
   font-size: 16px;
   color: #858cc2;
@@ -225,10 +232,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .cod-area-container input:focus + label,
 .cellphone-container input:not(:placeholder-shown) + label,
 .cod-area-container input:not(:placeholder-shown) + label {
-  transform: translateY(
-    -100%
-  ); /* Mueve el label hacia arriba de manera proporcional */
-  font-size: 0.75rem; /* 12px en rem */
+  transform: translateY(-100%);
+  font-size: 0.75rem;
 }
 
 .contact-container {
@@ -237,11 +242,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .title_area {
-  margin-left: -60px;
-  font-family: "Rubik", sans-serif; /* Cambia la fuente */
-  font-size: 12px; /* Ajusta el tamaño */
-  font-weight: 400; /* Grosor de la fuente */
-  color: #666; /* Color del texto */
+  margin-left: 80px;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
   text-align: left;
   margin-top: 5px;
   width: 80%;
@@ -320,4 +325,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .button-request-loan.enabled:hover {
   background-color: #0056b3;
+}
+.error-text-form {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: -30px;
 }

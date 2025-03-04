@@ -91,18 +91,18 @@ export default function LoanForm() {
         <div className="user-dni-container">
           <div className="user-dni">
             <input
-              type="text" 
+              type="text"
               name="user-dni"
               id="user-dni"
               placeholder=" "
               value={formData.DNI}
               onChange={(e) => {
-                const rawValue = e.target.value.replace(/\D/g, "").slice(0, 8); 
+                const rawValue = e.target.value.replace(/\D/g, "").slice(0, 8);
 
                 const formattedDNI = rawValue.replace(
                   /^(\d{2})(\d{3})?(\d{3})?$/,
-                  ( _,p1, p2, p3) => {
-                    const parts = [p1, p2, p3].filter(Boolean); 
+                  (_, p1, p2, p3) => {
+                    const parts = [p1, p2, p3].filter(Boolean);
                     return parts.join(".");
                   }
                 );
@@ -112,9 +112,12 @@ export default function LoanForm() {
             />
             <label htmlFor="user-dni">DNI</label>
           </div>
+          {formData.DNI.length > 0 && formData.DNI.length < 8 && (
+            <p className="error-text-form ">
+              El DNI debe tener exactamente 8 números
+            </p>
+          )}
         </div>
-
-        {/* Campo Radio para Sexo */}
 
         <div className="user_sexo">
           <label className="sexo-title">Sexo que figura en tu DNI</label>
