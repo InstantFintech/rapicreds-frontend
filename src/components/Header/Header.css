@@ -104,6 +104,10 @@ nav ul li a:hover {
     color: #2864eb; /* El color que desees cuando el ratón pasa por encima */
 }
 
+.header-button:hover {
+    color: #2864eb; /* El color que desees cuando el ratón pasa por encima */
+    cursor: pointer;
+}
 
 
 /* Estilos para el contenedor del header */
