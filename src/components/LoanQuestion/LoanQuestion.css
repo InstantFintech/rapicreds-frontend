@@ -1,0 +1,124 @@
+.shadow_card_question  {
+    display: block;
+    unicode-bidi: isolate;
+    max-width: 100%;
+
+    padding: 20px 0;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 24px;
+    right: 0;
+    top: 80px;
+    width: 100%;  
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .8);
+    min-height: 800px;
+    box-sizing: border-box;
+}
+
+.loan-question-title {
+    font-size: 20px;
+    letter-spacing: .005em;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 8px;
+    box-sizing: border-box;
+    color: #0c1e43;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+.loan-question-title-2 {
+    font-size: 16px;
+    letter-spacing: .005em;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 8px;
+    box-sizing: border-box;
+    color: #858cc2;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+
+
+.tab-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .tab-button.Nosotros,
+  .tab-button.Requisitos,
+  .tab-button.Solicitud,
+  .tab-button.Registro,
+  .tab-button.Cuotas,
+  .tab-button.Renovacion {
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #0c1e43;
+    border: none;
+  }
+
+
+  .tab-button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    width: 0%;
+    height: 1px;
+    background-color: #3262c4;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+
+  .tab-button:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  
+
+  .tab-button.active::after {
+    margin-left: 20px;
+    width: 70%; 
+    left: 0; 
+    bottom: 7px; 
+    height: 1px;
+    background-color: #3262c4;
+  }
+/* Subrayado específico para cada botón */
+.tab-button.Registro.active::after {
+    width: 50%; /* Ajusta según el tamaño del texto */
+    left: 25%;
+  }
+  
+  .tab-button.Cuotas.active::after {
+    width: 60%;
+    left: 20%;
+  }
+  
+  .tab-button.Renovacion.active::after {
+    width: 70%;
+    left: 15%;
+  }
+
+  p {
+    color: #454f96; font-size: 16px; line-height: 24px;  font-weight: 400;
+    text-align: left;
+  }
+  h1 {
+    font-size: 20px;  line-height: 28px;  font-weight: 500; color: #0c1e43;text-align: left;
+  }  
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    border: 1px;
+    background-color: #858cc2; 
+    margin: 20px 0; 
+  }
+  
