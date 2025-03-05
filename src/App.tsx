@@ -2,7 +2,8 @@
 import React, { } from 'react';
 
 import './App.css';
-import LoanCalculator from "./components/LoanCalculator/LoanCalculator.tsx";
+
+import LonaQuestion from"./components/LoanQuestion/LoanQuestion.tsx";
 
 /*
  * This is an example of a React functional component making use of "hooks".
@@ -13,7 +14,7 @@ function App() {
     <>
       <div className="card">
 
-        <LoanCalculator></LoanCalculator>
+        <LonaQuestion></LonaQuestion>
 
       </div>
     </>
